@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrinho - Agro Sustentável</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="menu">
+      <h1>Agro Sustentável</h1>
+      <a href="#acoes">Ações</a>
+      <a href="#ideias">Ideias</a>
+    </nav>
+
+    <section class="hero">
+      <p class="tag">Projeto exemplo - Agrinho</p>
+      <h2>Agro forte, futuro sustentável</h2>
+      <p>
+        Um projeto simples para mostrar como pequenas atitudes ajudam a equilibrar
+        a produção de alimentos e o cuidado com o meio ambiente.
+      </p>
+      <a class="botao" href="#acoes">Ver ações sustentáveis</a>
+    </section>
+  </header>
+
+  <main>
+    <section class="cards">
+      <article class="card">
+        <span>🌱</span>
+        <h3>Produzir melhor</h3>
+        <p>Usar tecnologia, planejamento e boas práticas para evitar desperdícios.</p>
+      </article>
+
+      <article class="card">
+        <span>💧</span>
+        <h3>Cuidar da água</h3>
+        <p>Preservar nascentes, rios e solo para garantir água hoje e no futuro.</p>
+      </article>
+
+      <article class="card">
+        <span>🤝</span>
+        <h3>Campo e cidade</h3>
+        <p>Valorizar quem produz e quem consome, fortalecendo essa conexão.</p>
+      </article>
+    </section>
+
+    <section id="acoes" class="painel">
+      <div>
+        <p class="tag">Interação com JavaScript</p>
+        <h2>Checklist de atitudes sustentáveis</h2>
+        <p>Marque as ações que sua escola, família ou comunidade poderia praticar.</p>
+      </div>
+
+      <div class="checklist">
+        <label>
+          <input type="checkbox" class="acao">
+          Separar lixo reciclável
+        </label>
+
+        <label>
+          <input type="checkbox" class="acao">
+          Economizar água
+        </label>
+
+        <label>
+          <input type="checkbox" class="acao">
+          Plantar árvores ou cuidar de jardins
+        </label>
+
+        <label>
+          <input type="checkbox" class="acao">
+          Evitar desperdício de alimentos
+        </label>
+      </div>
+
+      <div class="progresso-area">
+        <p id="texto-progresso">0 de 4 ações marcadas</p>
+        <div class="barra">
+          <div id="barra-progresso"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ideias" class="painel">
+      <div>
+        <p class="tag">Mural da turma</p>
+        <h2>Adicione uma ideia para um agro mais sustentável</h2>
+        <p>As ideias ficam salvas no navegador usando localStorage.</p>
+      </div>
+
+      <form id="form-ideia">
+        <input
+          type="text"
+          id="campo-ideia"
+          placeholder="Ex: criar uma horta na escola"
+          maxlength="80"
+          required
+        >
+        <button type="submit">Adicionar</button>
+      </form>
+
+      <ul id="lista-ideias"></ul>
+
+      <button id="limpar-ideias" class="botao-secundario" type="button">
+        Limpar ideias
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Exemplo educativo feito com HTML, CSS e JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
